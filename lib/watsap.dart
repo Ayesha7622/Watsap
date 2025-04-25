@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Wweb extends StatelessWidget {
+class Wweb extends StatefulWidget {
   const Wweb({super.key});
+
+  @override
+  State<Wweb> createState() => _WwebState();
+}
+
+class _WwebState extends State<Wweb> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
