@@ -11,20 +11,33 @@ class _WwebState extends State<Wweb> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.black,
         appBar: AppBar(
+          backgroundColor: Colors.black,
           title: Text('WhatsApp',
               style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black)),
+                  color: const Color.fromARGB(255, 244, 240, 240))),
           actions: [
-            Icon(Icons.camera_alt_sharp),
+            Icon(
+              Icons.camera_alt_sharp,
+              color: Colors.white,
+            ),
             SizedBox(
               width: 20,
             ),
-            Icon(Icons.search),
-            SizedBox(width: 15),
-            Icon(Icons.more_vert),
+            Icon(
+              Icons.search,
+              color: Colors.white,
+            ),
+            SizedBox(
+              width: 15,
+            ),
+            Icon(
+              Icons.more_vert,
+              color: Colors.white,
+            ),
           ],
         ),
         body: SingleChildScrollView(
@@ -146,33 +159,39 @@ class _WwebState extends State<Wweb> {
                   ),
                 ],
               ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage('assets/naaaai.jpg'),
-                ),
-                title: Text('Fatima'),
-                subtitle: Text('abhi tk ni ai ho '),
-                trailing: Column(
-                  children: [
-                    Text('11:00 am'),
-                    CircleAvatar(
-                        radius: 8,
-                        backgroundColor: Colors.green,
-                        child: Text(
-                          '30',
-                          style: TextStyle(
-                              fontSize: 8,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black),
-                        )),
-                  ],
+              Card(
+                color: const Color.fromARGB(255, 35, 34, 34),
+                child: ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/naaaai.jpg'),
+                  ),
+                  title: Text(
+                    'Fatima',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  subtitle: Text('abhi tk ni ai ho '),
+                  trailing: Column(
+                    children: [
+                      Text('11:00 am'),
+                      CircleAvatar(
+                          radius: 8,
+                          backgroundColor: Colors.green,
+                          child: Text(
+                            '30',
+                            style: TextStyle(
+                                fontSize: 8,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black),
+                          )),
+                    ],
+                  ),
                 ),
               ),
               ListTile(
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/yupp.jpg'),
                 ),
-                title: Text('Manuu'),
+                title: Text('Manuu', style: TextStyle(color: Colors.white)),
                 subtitle: Text('sbha ho gi h...uth bhi ja'),
                 trailing: Column(
                   children: [
@@ -194,7 +213,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/ashiii.jpg'),
                 ),
-                title: Text('Partner'),
+                title: Text('Partner', style: TextStyle(color: Colors.white)),
                 subtitle: Text('Kia kr rhi lrkii'),
                 trailing: Column(
                   children: [
@@ -216,7 +235,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/ahaa.jpg'),
                 ),
-                title: Text('Zaisha'),
+                title: Text('Zaisha', style: TextStyle(color: Colors.white)),
                 subtitle: Text('Are u suree?'),
                 trailing: Column(
                   children: [
@@ -238,7 +257,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/aesthi.jpg'),
                 ),
-                title: Text('Meeru'),
+                title: Text('Meeru', style: TextStyle(color: Colors.white)),
                 subtitle: Text('Kl bt ho g...thk h na'),
                 trailing: Column(
                   children: [
@@ -260,7 +279,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/acce.jpg'),
                 ),
-                title: Text('Heer'),
+                title: Text('Heer', style: TextStyle(color: Colors.white)),
                 subtitle: Text('Block kro g tm mujhe? '),
                 trailing: Column(
                   children: [
@@ -282,7 +301,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/cosss.jpg'),
                 ),
-                title: Text('Ainii'),
+                title: Text('Ainii', style: TextStyle(color: Colors.white)),
                 subtitle: Text('kia hua h ...tnyt thk h tri...kuch hua?'),
                 trailing: Column(
                   children: [
@@ -304,7 +323,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/bikkkk.jpg'),
                 ),
-                title: Text('Nainaa'),
+                title: Text('Nainaa', style: TextStyle(color: Colors.white)),
                 subtitle: Text('ok fine...u can go now '),
                 trailing: Column(
                   children: [
@@ -326,7 +345,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/candy.jpg'),
                 ),
-                title: Text('Zahra'),
+                title: Text('Zahra', style: TextStyle(color: Colors.white)),
                 subtitle: Text('ok thk h ...m aa jaun g yr esi bt ni h '),
                 trailing: Column(
                   children: [
@@ -348,7 +367,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/awwsh.jpg'),
                 ),
-                title: Text('Lishaa'),
+                title: Text('Lishaa', style: TextStyle(color: Colors.white)),
                 subtitle:
                     Text('Kl bt krty hyn is topic pr...abhi acha mood ni'),
                 trailing: Column(
@@ -371,7 +390,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/book.jpg'),
                 ),
-                title: Text('Drama baz'),
+                title: Text('Drama baz', style: TextStyle(color: Colors.white)),
                 subtitle: Text('Yr m ny abhi is bary m ni socha'),
                 trailing: Column(
                   children: [
@@ -393,7 +412,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/nopee.jpg'),
                 ),
-                title: Text('Alinaa'),
+                title: Text('Alinaa', style: TextStyle(color: Colors.white)),
                 subtitle: Text('M kl se ni aun g ...phly bta rhi'),
                 trailing: Column(
                   children: [
@@ -415,7 +434,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/happp.jpg'),
                 ),
-                title: Text('Minii'),
+                title: Text('Minii', style: TextStyle(color: Colors.white)),
                 subtitle: Text('U jahil..btameez..dfa ho '),
                 trailing: Column(
                   children: [
@@ -437,7 +456,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/intt.jpg'),
                 ),
-                title: Text('Mirhaa'),
+                title: Text('Mirhaa', style: TextStyle(color: Colors.white)),
                 subtitle: Text('Ye kia treeqa hta h broo '),
                 trailing: Column(
                   children: [
@@ -459,7 +478,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/niccc.jpg'),
                 ),
-                title: Text('Aisha'),
+                title: Text('Aisha', style: TextStyle(color: Colors.white)),
                 subtitle: Text('Kafi pyari jgh thi ...dekha m ny'),
                 trailing: Column(
                   children: [
@@ -481,7 +500,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/izzu.jpg'),
                 ),
-                title: Text('Anushyy'),
+                title: Text('Anushyy', style: TextStyle(color: Colors.white)),
                 subtitle: Text('ok..M bt krun g aj.. '),
                 trailing: Column(
                   children: [
@@ -503,7 +522,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/nainn.jpg'),
                 ),
-                title: Text('Lizzyy'),
+                title: Text('Lizzyy', style: TextStyle(color: Colors.white)),
                 subtitle: Text('Acha shi h ..Dont Worry  '),
                 trailing: Column(
                   children: [
@@ -525,7 +544,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/juliii.jpg'),
                 ),
-                title: Text('Mishii'),
+                title: Text('Mishii', style: TextStyle(color: Colors.white)),
                 subtitle: Text('Aa rhi ho ya ni ? '),
                 trailing: Column(
                   children: [
@@ -547,7 +566,7 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/kipy.jpg'),
                 ),
-                title: Text('Izzu'),
+                title: Text('Izzu', style: TextStyle(color: Colors.white)),
                 subtitle: Text('M kl btaun g '),
                 trailing: Column(
                   children: [
@@ -565,17 +584,43 @@ class _WwebState extends State<Wweb> {
                   ],
                 ),
               ),
-              TextButton(
-                onPressed: () {},
-                // child: CircleAvatar(
-                //   radius: 10,
-                //   backgroundColor: const Color.fromARGB(255, 7, 90, 125),
-                //   child: CircleAvatar(
-                //     radius: 20,
-                //     backgroundColor: Colors.black,
-                //   ),
-                // )
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    FloatingActionButton(
+                        onPressed: () {},
+                        backgroundColor: Colors.black,
+                        child: CircleAvatar(
+                          radius: 20,
+                          backgroundColor:
+                              const Color.fromARGB(255, 10, 55, 92),
+                          child: CircleAvatar(
+                            radius: 15,
+                            backgroundColor: Colors.black,
+                          ),
+                        )),
+                  ],
+                ),
               ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    FloatingActionButton(
+                      onPressed: () {},
+                      backgroundColor: Colors.green,
+                      child: Icon(
+                        Icons.contact_page,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+              )
+
               // TextButton(
               //       onPressed: () {},
               // child: Container(
