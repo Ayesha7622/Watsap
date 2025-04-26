@@ -40,7 +40,7 @@ class Contact extends StatelessWidget {
                   radius: 25,
                   backgroundColor: Colors.green,
                   child: Icon(
-                    Icons.person,
+                    Icons.people_alt,
                     color: Colors.black,
                   ),
                 ),
@@ -53,13 +53,16 @@ class Contact extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(
+              height: 20,
+            ),
             Row(
               children: [
                 CircleAvatar(
                   radius: 25,
                   backgroundColor: Colors.green,
                   child: Icon(
-                    Icons.person,
+                    Icons.person_add,
                     color: Colors.black,
                   ),
                 ),
@@ -71,6 +74,9 @@ class Contact extends StatelessWidget {
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 )
               ],
+            ),
+            SizedBox(
+              height: 20,
             ),
             Row(
               children: [
@@ -90,6 +96,9 @@ class Contact extends StatelessWidget {
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 )
               ],
+            ),
+            SizedBox(
+              height: 20,
             ),
             Row(
               children: [
