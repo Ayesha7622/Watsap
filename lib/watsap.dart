@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:watsap/meta.dart';
+import 'package:watsap/search.dart';
 
 class Wweb extends StatefulWidget {
   const Wweb({super.key});
@@ -48,11 +50,11 @@ class _WwebState extends State<Wweb> {
                 child: Row(
                   children: [
                     Container(
-                      height: 39,
-                      width: 930,
+                      height: 50,
+                      width: 370,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(25),
+                        color: const Color.fromARGB(255, 35, 32, 32),
                       ),
 
                       child: Row(
@@ -62,15 +64,16 @@ class _WwebState extends State<Wweb> {
                           ),
                           Icon(
                             Icons.search,
-                            color: Colors.black,
+                            color: const Color.fromARGB(255, 118, 116, 116),
                           ),
                           SizedBox(width: 5),
                           Text(
-                            'Search....',
+                            'Ask Meta AI or Search....',
                             style: TextStyle(
-                                fontSize: 15,
+                                fontSize: 17,
                                 fontWeight: FontWeight.w500,
-                                color: Colors.black),
+                                color:
+                                    const Color.fromARGB(255, 142, 139, 139)),
                           ),
                         ],
                       ),
@@ -80,6 +83,9 @@ class _WwebState extends State<Wweb> {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 18,
+              ),
               Row(
                 children: [
                   Column(
@@ -87,13 +93,19 @@ class _WwebState extends State<Wweb> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                            height: 20,
+                            height: 25,
                             width: 35,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: const Color.fromARGB(255, 139, 234, 143),
+                              borderRadius: BorderRadius.circular(23),
+                              color: const Color.fromARGB(255, 46, 65, 47),
                             ),
-                            child: Center(child: Text('All'))),
+                            child: Center(
+                                child: Text(
+                              'All',
+                              style: TextStyle(
+                                  color: Colors.green,
+                                  fontWeight: FontWeight.w600),
+                            ))),
                       )
                     ],
                   ),
@@ -102,13 +114,20 @@ class _WwebState extends State<Wweb> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                            height: 20,
+                            height: 25,
                             width: 105,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: const Color.fromARGB(255, 139, 234, 143),
+                              borderRadius: BorderRadius.circular(25),
+                              color: const Color.fromARGB(255, 49, 50, 49),
                             ),
-                            child: Center(child: Text('Unread chats'))),
+                            child: Center(
+                                child: Text(
+                              'Unread chats',
+                              style: TextStyle(
+                                  color:
+                                      const Color.fromARGB(255, 128, 136, 128),
+                                  fontWeight: FontWeight.w600),
+                            ))),
                       )
                     ],
                   ),
@@ -117,13 +136,20 @@ class _WwebState extends State<Wweb> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                            height: 20,
+                            height: 25,
                             width: 85,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color: const Color.fromARGB(255, 139, 234, 143),
+                              color: const Color.fromARGB(255, 49, 50, 49),
                             ),
-                            child: Center(child: Text('Favourites'))),
+                            child: Center(
+                                child: Text(
+                              'Favourites',
+                              style: TextStyle(
+                                  color:
+                                      const Color.fromARGB(255, 128, 136, 128),
+                                  fontWeight: FontWeight.w600),
+                            ))),
                       )
                     ],
                   ),
@@ -132,13 +158,20 @@ class _WwebState extends State<Wweb> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                            height: 20,
+                            height: 25,
                             width: 70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color: const Color.fromARGB(255, 139, 234, 143),
+                              color: const Color.fromARGB(255, 49, 50, 49),
                             ),
-                            child: Center(child: Text('Groups'))),
+                            child: Center(
+                                child: Text(
+                              'Groups',
+                              style: TextStyle(
+                                  color:
+                                      const Color.fromARGB(255, 128, 136, 128),
+                                  fontWeight: FontWeight.w600),
+                            ))),
                       )
                     ],
                   ),
@@ -147,39 +180,62 @@ class _WwebState extends State<Wweb> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                            height: 20,
+                            height: 25,
                             width: 30,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color: const Color.fromARGB(255, 139, 234, 143),
+                              color: const Color.fromARGB(255, 49, 50, 49),
                             ),
-                            child: Center(child: Text('+'))),
+                            child: Center(
+                                child: Text(
+                              '+',
+                              style: TextStyle(
+                                  color:
+                                      const Color.fromARGB(255, 128, 136, 128),
+                                  fontWeight: FontWeight.w600),
+                            ))),
                       )
                     ],
                   ),
                 ],
               ),
+              SizedBox(
+                height: 20,
+              ),
               Card(
-                color: const Color.fromARGB(255, 35, 34, 34),
+                color: const Color.fromARGB(255, 23, 21, 21),
                 child: ListTile(
                   leading: CircleAvatar(
                     backgroundImage: AssetImage('assets/naaaai.jpg'),
                   ),
                   title: Text(
                     'Fatima',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600),
                   ),
-                  subtitle: Text('abhi tk ni ai ho '),
+                  subtitle: Text(
+                    'abhi tk ni ai ho ',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158)),
+                  ),
                   trailing: Column(
                     children: [
-                      Text('11:00 am'),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        '11:00 am',
+                        style: TextStyle(
+                            color: const Color.fromARGB(255, 161, 158, 158)),
+                      ),
+                      SizedBox(height: 10),
                       CircleAvatar(
-                          radius: 8,
+                          radius: 10,
                           backgroundColor: Colors.green,
                           child: Text(
                             '30',
                             style: TextStyle(
-                                fontSize: 8,
+                                fontSize: 10,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black),
                           )),
@@ -191,18 +247,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/yupp.jpg'),
                 ),
-                title: Text('Manuu', style: TextStyle(color: Colors.white)),
-                subtitle: Text('sbha ho gi h...uth bhi ja'),
+                title: Text('Manuu',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('sbha ho gi h...uth bhi ja',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('5:00 am'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '5:00 am',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '10',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -213,18 +281,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/ashiii.jpg'),
                 ),
-                title: Text('Partner', style: TextStyle(color: Colors.white)),
-                subtitle: Text('Kia kr rhi lrkii'),
+                title: Text('Partner',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('Kia kr rhi lrkii',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('7:00 am'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '7:00 am',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '18',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -235,18 +315,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/ahaa.jpg'),
                 ),
-                title: Text('Zaisha', style: TextStyle(color: Colors.white)),
-                subtitle: Text('Are u suree?'),
+                title: Text('Zaisha',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('Are u suree?',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('10:10 pm'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '10:10 pm',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '16',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -257,18 +349,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/aesthi.jpg'),
                 ),
-                title: Text('Meeru', style: TextStyle(color: Colors.white)),
-                subtitle: Text('Kl bt ho g...thk h na'),
+                title: Text('Meeru',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('Kl bt ho g...thk h na',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('1:19 pm'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '1:19 pm',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '13',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -279,18 +383,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/acce.jpg'),
                 ),
-                title: Text('Heer', style: TextStyle(color: Colors.white)),
-                subtitle: Text('Block kro g tm mujhe? '),
+                title: Text('Heer',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('Block kro g tm mujhe? ',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('6:17 am'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '6:17 am',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '1',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -301,18 +417,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/cosss.jpg'),
                 ),
-                title: Text('Ainii', style: TextStyle(color: Colors.white)),
-                subtitle: Text('kia hua h ...tnyt thk h tri...kuch hua?'),
+                title: Text('Ainii',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('kia hua h ...tnyt thk h tri...kuch hua?',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('3:15 am'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '3:15 am',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '5',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -323,18 +451,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/bikkkk.jpg'),
                 ),
-                title: Text('Nainaa', style: TextStyle(color: Colors.white)),
-                subtitle: Text('ok fine...u can go now '),
+                title: Text('Nainaa',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('ok fine...u can go now ',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('2:00 pm'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '2:00 pm',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '4',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -345,18 +485,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/candy.jpg'),
                 ),
-                title: Text('Zahra', style: TextStyle(color: Colors.white)),
-                subtitle: Text('ok thk h ...m aa jaun g yr esi bt ni h '),
+                title: Text('Zahra',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('ok thk h ...m aa jaun g yr esi bt ni h ',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('10:50 pm'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '10:50 pm',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '9',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -367,19 +519,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/awwsh.jpg'),
                 ),
-                title: Text('Lishaa', style: TextStyle(color: Colors.white)),
-                subtitle:
-                    Text('Kl bt krty hyn is topic pr...abhi acha mood ni'),
+                title: Text('Lishaa',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('Kl bt krty hyn is topic pr...abhi acha mood ni',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('11:19 pm'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '11:19 pm',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '3',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -390,18 +553,29 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/book.jpg'),
                 ),
-                title: Text('Drama baz', style: TextStyle(color: Colors.white)),
-                subtitle: Text('Yr m ny abhi is bary m ni socha'),
+                title: Text('Drama baz',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('Yr m ny abhi is bary m ni socha',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('6:30 am'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '6:30 am',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '19',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -412,18 +586,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/nopee.jpg'),
                 ),
-                title: Text('Alinaa', style: TextStyle(color: Colors.white)),
-                subtitle: Text('M kl se ni aun g ...phly bta rhi'),
+                title: Text('Alinaa',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('M kl se ni aun g ...phly bta rhi',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('8:00 pm'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '8:00 pm',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '11',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -434,18 +620,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/happp.jpg'),
                 ),
-                title: Text('Minii', style: TextStyle(color: Colors.white)),
-                subtitle: Text('U jahil..btameez..dfa ho '),
+                title: Text('Minii',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('U jahil..btameez..dfa ho ',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('1:00 am'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '1:00 am',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '5',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -456,18 +654,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/intt.jpg'),
                 ),
-                title: Text('Mirhaa', style: TextStyle(color: Colors.white)),
-                subtitle: Text('Ye kia treeqa hta h broo '),
+                title: Text('Mirhaa',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('Ye kia treeqa hta h broo ',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('6:10 pm'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '6:10 pm',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '2',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -478,18 +688,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/niccc.jpg'),
                 ),
-                title: Text('Aisha', style: TextStyle(color: Colors.white)),
-                subtitle: Text('Kafi pyari jgh thi ...dekha m ny'),
+                title: Text('Aisha',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('Kafi pyari jgh thi ...dekha m ny',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('2:55 am'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '2:55 am',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '7',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -498,20 +720,34 @@ class _WwebState extends State<Wweb> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage('assets/izzu.jpg'),
+                  backgroundImage: AssetImage(
+                    'assets/izzu.jpg',
+                  ),
                 ),
-                title: Text('Anushyy', style: TextStyle(color: Colors.white)),
-                subtitle: Text('ok..M bt krun g aj.. '),
+                title: Text('Anushyy',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('ok..M bt krun g aj.. ',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('12:37 pm'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '12:37 pm',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '16',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -522,18 +758,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/nainn.jpg'),
                 ),
-                title: Text('Lizzyy', style: TextStyle(color: Colors.white)),
-                subtitle: Text('Acha shi h ..Dont Worry  '),
+                title: Text('Lizzyy',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('Acha shi h ..Dont Worry  ',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('5:11 am'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '5:11 am',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '14',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -544,18 +792,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/juliii.jpg'),
                 ),
-                title: Text('Mishii', style: TextStyle(color: Colors.white)),
-                subtitle: Text('Aa rhi ho ya ni ? '),
+                title: Text('Mishii',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('Aa rhi ho ya ni ? ',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('3:10 pm'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '3:10 pm',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '1',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -566,18 +826,30 @@ class _WwebState extends State<Wweb> {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage('assets/kipy.jpg'),
                 ),
-                title: Text('Izzu', style: TextStyle(color: Colors.white)),
-                subtitle: Text('M kl btaun g '),
+                title: Text('Izzu',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600)),
+                subtitle: Text('M kl btaun g ',
+                    style: TextStyle(
+                        color: const Color.fromARGB(255, 161, 158, 158))),
                 trailing: Column(
                   children: [
-                    Text('9:00 pm'),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      '9:00 pm',
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 161, 158, 158)),
+                    ),
+                    SizedBox(height: 10),
                     CircleAvatar(
-                        radius: 8,
+                        radius: 10,
                         backgroundColor: Colors.green,
                         child: Text(
                           '9',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
                         )),
@@ -590,7 +862,10 @@ class _WwebState extends State<Wweb> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     FloatingActionButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Meta()));
+                        },
                         backgroundColor: Colors.black,
                         child: CircleAvatar(
                           radius: 20,
@@ -610,10 +885,13 @@ class _WwebState extends State<Wweb> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     FloatingActionButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Contact()));
+                      },
                       backgroundColor: Colors.green,
                       child: Icon(
-                        Icons.contact_page,
+                        Icons.add_box_sharp,
                         color: Colors.black,
                       ),
                     ),
