@@ -214,7 +214,7 @@ class Contact extends StatelessWidget {
                               color: Colors.white)),
                       SizedBox(height: 5, width: 5),
                       Text(
-                        ' Stay Blessed',
+                        'Stay Blessed',
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w300,
@@ -251,7 +251,7 @@ class Contact extends StatelessWidget {
                               color: Colors.white)),
                       SizedBox(height: 5, width: 5),
                       Text(
-                        ' Busy',
+                        'Busy',
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w300,
@@ -288,7 +288,7 @@ class Contact extends StatelessWidget {
                               color: Colors.white)),
                       SizedBox(height: 5, width: 5),
                       Text(
-                        ' See the Good',
+                        'See the Good',
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w300,
@@ -325,7 +325,7 @@ class Contact extends StatelessWidget {
                               color: Colors.white)),
                       SizedBox(height: 5, width: 5),
                       Text(
-                        ' Available',
+                        'Available',
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w300,
@@ -362,7 +362,7 @@ class Contact extends StatelessWidget {
                               color: Colors.white)),
                       SizedBox(height: 5, width: 5),
                       Text(
-                        ' Hey! i am using Whatsapp',
+                        'Hey! i am using Whatsapp',
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w300,
